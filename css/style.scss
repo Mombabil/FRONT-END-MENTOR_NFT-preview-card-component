@@ -1,0 +1,138 @@
+@import "./settings";
+
+.layout{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: $mainBg;
+    .content{
+        background: $cardBg;
+        padding: 18px;
+        border-radius: 18px;
+        .img{
+            background: $cyan;
+            border-radius: 8px;
+            position: relative;
+            max-width: 300px;
+            max-height: 300px;
+            &:hover{
+                svg{
+                    visibility: visible;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+                img{
+                    opacity: 0.7;
+                    cursor: pointer;
+                    max-width: 300px;
+                    max-height: 300px;
+                }
+            }
+            svg{
+                position: absolute;
+                top: calc(50% - 24px);
+                left: calc(50% - 24px);
+                visibility: hidden;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 6px;
+            }
+        }
+        h4{
+            color: white;
+            margin: 12px 0;
+            max-width: 300px;
+            &:hover{
+                color: $cyan;
+                cursor: pointer;
+            }
+        }
+        p{
+            color: $softBlue;
+            margin-top: 0;
+            font-size: 0.8em;
+            max-width: 300px;
+        }
+        .nft{
+            font-size: 0.7em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $line;
+            span{
+                display: flex;
+                align-items: center;
+                svg{
+                    margin-right: 8px;
+                }
+            }
+            .etherum{
+                color: $cyan;
+            }
+            .clock{
+                color: $softBlue;
+            }
+        }
+        .avatar{
+            margin-top: 12px;
+            font-size: 0.7em;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img{
+                width: 10%;
+                border: 1px solid white;
+                border-radius: 100%;
+                margin-right: 8px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $cyan;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 1350px) {
+//     .layout .content{
+//         width: 20%;
+//     }
+// }
+// @media screen and (max-width: 1100px) {
+//     .layout .content{
+//         width: 25%;
+//     }
+// }
+// @media screen and (max-width: 900px) {
+//     .layout .content{
+//         width: 33%;
+//     }
+// }
+// @media screen and (max-width: 650px) {
+//     .layout .content{
+//         width: 40%;
+//     }
+// }
+// @media screen and (max-width: 500px) {
+//     .layout .content{
+//         width: 50%;
+//     }
+// }
+// @media screen and (max-width: 400px) {
+//     .layout .content{
+//         width: 70%;
+//     }
+// }
+// @media screen and (max-width: 300px) {
+//     .layout .content{
+//         width: 80%;
+//     }
+// }
